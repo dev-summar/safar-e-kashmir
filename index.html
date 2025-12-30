@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Safar e Kashmir - Local Concierge Service</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec49",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102215",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        .dark .glass-card {
+            background: rgba(16, 34, 21, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-900 dark:text-gray-100 overflow-x-hidden transition-colors duration-300">
+<!-- Sticky Floating Action Button -->
+<div class="fixed bottom-6 right-6 z-50">
+<a class="flex h-14 w-14 items-center justify-center rounded-full bg-primary shadow-lg shadow-primary/40 hover:scale-105 transition-transform duration-200" href="contact.html">
+<span class="material-symbols-outlined text-background-dark" style="font-size: 32px;">chat</span>
+</a>
+</div>
+<header class="sticky top-0 z-50 w-full border-b border-gray-200/50 bg-background-light/80 backdrop-blur-md dark:border-gray-800 dark:bg-background-dark/80">
+    <div class="mx-auto flex h-16 max-w-7xl items-center px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center gap-3 flex-shrink-0">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="./logo.png" alt="Safar e Kashmir logo" class="h-7 w-auto opacity-100" style="filter: saturate(1.06) contrast(1.05);"/>
+                <span class="text-lg font-bold tracking-tight text-[#0d1b11] dark:text-white">Safar e Kashmir</span>
+            </a>
+        </div>
+
+        <div class="flex-1 flex justify-center">
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="index.html" class="text-sm font-medium text-primary" aria-current="page">Home</a>
+                <a href="package.html" class="text-sm font-medium text-[#0d1b11] dark:text-gray-300 hover:text-primary transition-colors">Packages</a>
+                <a href="about.html" class="text-sm font-medium text-[#0d1b11] dark:text-gray-300 hover:text-primary transition-colors">About</a>
+                <a href="contact.html" class="text-sm font-medium text-[#0d1b11] dark:text-gray-300 hover:text-primary transition-colors">Contact</a>
+            </nav>
+        </div>
+
+        <div class="hidden md:flex items-center gap-4 flex-shrink-0">
+            <a href="https://wa.me/919186049279" class="relative group overflow-hidden rounded-lg bg-primary transition-all duration-300 h-10 px-5 flex items-center justify-center gap-2 text-[#0d1b11] text-sm font-bold shadow-glow hover:shadow-lg transform hover:-translate-y-0.5">
+                <span class="absolute inset-0 w-full h-full animate-shimmer pointer-events-none"></span>
+                <span class="material-symbols-outlined text-[18px]">chat</span>
+                <span>Chat on WhatsApp</span>
+            </a>
+            <a href="contact.html" class="flex items-center justify-center h-10 ml-2 bg-primary text-[#0d1b11] rounded-full px-4 text-sm font-bold shadow-md shadow-primary/20">
+                Book Now
+            </a>
+        </div>
+    </div>
+</header>
+<!-- Hero Section -->
+<section class="relative overflow-hidden pt-12 pb-20 lg:pt-24 lg:pb-32">
+<div class="absolute top-0 -left-4 w-96 h-96 bg-primary/20 rounded-full blur-[100px] -z-10"></div>
+<div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-blue-400/10 rounded-full blur-[120px] -z-10"></div>
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="grid lg:grid-cols-2 gap-12 items-center">
+<div class="flex flex-col gap-6 text-center lg:text-left">
+<div class="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-semibold text-primary self-center lg:self-start w-fit">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+                        #1 Rated Local Concierge in Kashmir
+                    </div>
+<h1 class="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-5xl lg:text-6xl">
+                        Experience Kashmir Like a <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-green-600">Local</span>.
+                    </h1>
+<p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto lg:mx-0">
+                        Your personal concierge for safe, authentic, and unforgettable trips to paradise. We handle the chaos of logistics, you just enjoy the view.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+<a href="https://wa.me/919186049279" class="flex items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3.5 text-base font-bold text-background-dark shadow-lg shadow-primary/30 hover:bg-[#0fd641] hover:-translate-y-1 transition-all duration-200">
+<span class="material-symbols-outlined">chat</span>
+                            Chat on WhatsApp
+                        </a>
+<a href="package.html" class="flex items-center justify-center gap-2 rounded-xl bg-white border border-gray-200 px-6 py-3.5 text-base font-bold text-gray-900 shadow-sm hover:bg-gray-50 hover:border-gray-300 dark:bg-white/5 dark:border-white/10 dark:text-white dark:hover:bg-white/10 transition-all duration-200">
+                            View Packages
+                        </a>
+</div>
+<div class="flex items-center justify-center lg:justify-start gap-4 pt-4">
+<div class="flex -space-x-3">
+<div class="h-10 w-10 rounded-full border-2 border-background-light dark:border-background-dark bg-gray-200 bg-cover bg-center" data-alt="User avatar 1" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDfJnSvuyPLIHIffxevsjXEZr4pTP7pnUG8FljRL8XvrTOxI9DHs92ctAYZFKZ4V0RMrlAEHeBlEarYSekmTHBmckTj1Lq-AsPhWTGBy9EmZ3mXfjkKci95OW1qTePogpgBu4osEhnydM_WuAEjeEJJEy8NLUGlaIVU0pLbI2jDriOqmYWq4Rmc7gkaQPS-1s7V2MbIm5BX4plNS22joLGNwAbjWLfLIHrZZ9CeljjGCghVE83456aMkqvSom0_Myvupbk56QcovZI_')"></div>
+<div class="h-10 w-10 rounded-full border-2 border-background-light dark:border-background-dark bg-gray-200 bg-cover bg-center" data-alt="User avatar 2" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB0pyuTErQWtSYBZAtQQ41E4rxt0QpFTRolP9oqyNZAYdqwYA257HYThwTWPfuonMiwtKQznYatD6Pb63N9U6RgQAaJX1WhCzsgJuetsKspdHgGK2IItjKzpDqh70GjiGeIuljfiDGM80uxVmLEuBiLWbawaxvJOFfxfzPO9NqpLAS8WDjzymQMRGIBWg_Jj1ZzrRQZinOciRn-zLam5GbQCboyph9ZzvbAnOMdfCtQj3TX8zw6E-ItU2sloxgu10zbzsd7TWBpxyJ1')"></div>
+<div class="h-10 w-10 rounded-full border-2 border-background-light dark:border-background-dark bg-gray-200 bg-cover bg-center" data-alt="User avatar 3" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBaXBHtRPzlRN7BHwzTx2fLZZjPll4iiSaUG3ZLJ7bF2RR8-jtxfwS5Hu0Hw-jH0WlYTnbX9DD2NIq0ITbTKnNKXZG0NyoFPWDZtSAAyXYJQzGmix5nyYqBMuepdAeYkXRGobAO1gdCDub_7hj6HOYtMLvML791NnZM1tEpcQ_jGslj5F_zyAnvvojUoNaPUfPeZo21WeWM-x0V_gjRl45pizYt8TgbP007ZD5u2QULXq3zS4vk67rXAD7scKebF64Kg2y9JJCkSOVE')"></div>
+<div class="flex h-10 w-10 items-center justify-center rounded-full border-2 border-background-light dark:border-background-dark bg-gray-100 text-xs font-bold text-gray-600 dark:bg-gray-800 dark:text-gray-300">
+                                +2k
+                            </div>
+</div>
+<div class="text-sm font-medium text-gray-600 dark:text-gray-400">
+                            Happy travelers this season
+                        </div>
+</div>
+</div>
+<div class="relative mx-auto w-full max-w-[500px] lg:max-w-none">
+<div class="relative z-10 overflow-hidden rounded-2xl shadow-2xl shadow-primary/20 aspect-[4/3] group">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60 z-10"></div>
+<div class="absolute bottom-6 left-6 z-20 text-white">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-primary text-sm">location_on</span>
+<span class="text-sm font-medium text-primary uppercase tracking-wide">Dal Lake, Srinagar</span>
+</div>
+<p class="text-lg font-bold">Shikara Ride at Sunset</p>
+</div>
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Scenic view of Dal Lake with mountains in background" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCT_AhWYStsZgIHS57yIdlS_Lhg3DTR6Q3tYCrsuFRDR4Giw_nPpdGfcPs2H_MSsyd3vqQB5K2rWu2d4n_cfnyXF2y7gZoAqPoYxe4ySvCJBTx7myljSftjiP-8eH4xFwbRNAOKPtjHvpuiYW7-DEZLIZHAJ079u58rE_qaML7HpPhYLVyWRlNctKNx7qH-zBiKmRqmuEAy4Z9EZN8D7ztSnO4wcctANVZQitv1AzSLqn72sfFSsn3g8WTBghGHCsCBko1UfRumh8Nm');"></div>
+</div>
+<!-- Floating status badge removed as requested -->
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Indicators -->
+<section class="py-16 bg-white dark:bg-white/5 border-y border-gray-100 dark:border-white/5">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Why trust us?</h2>
+<p class="mt-4 text-lg text-gray-600 dark:text-gray-400">We bring the reliability of modern service to the chaos of travel.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Feature 1 -->
+<div class="group relative overflow-hidden rounded-2xl bg-background-light p-8 transition-all hover:bg-white hover:shadow-xl dark:bg-white/5 dark:hover:bg-white/10 border border-transparent hover:border-primary/20">
+<div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-3xl">diversity_3</span>
+</div>
+<h3 class="text-xl font-bold text-gray-900 dark:text-white">Local Experts</h3>
+<p class="mt-2 text-gray-600 dark:text-gray-400">Born and raised in Kashmir, we know the hidden gems that Google Maps doesn't.</p>
+</div>
+<!-- Feature 2 -->
+<div class="group relative overflow-hidden rounded-2xl bg-background-light p-8 transition-all hover:bg-white hover:shadow-xl dark:bg-white/5 dark:hover:bg-white/10 border border-transparent hover:border-primary/20">
+<div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-3xl">support_agent</span>
+</div>
+<h3 class="text-xl font-bold text-gray-900 dark:text-white">24/7 Concierge</h3>
+<p class="mt-2 text-gray-600 dark:text-gray-400">Real humans available on WhatsApp around the clock to solve any issue instantly.</p>
+</div>
+<!-- Feature 3 -->
+<div class="group relative overflow-hidden rounded-2xl bg-background-light p-8 transition-all hover:bg-white hover:shadow-xl dark:bg-white/5 dark:hover:bg-white/10 border border-transparent hover:border-primary/20">
+<div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-3xl">verified_user</span>
+</div>
+<h3 class="text-xl font-bold text-gray-900 dark:text-white">Verified Stays</h3>
+<p class="mt-2 text-gray-600 dark:text-gray-400">We personally inspect every hotel and houseboat. No nasty surprises upon arrival.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Mobile spacer so page content isn't obscured by sticky nav -->
+<div class="md:hidden h-20"></div>
+
+<!-- Mobile bottom navigation (mobile-only) -->
+<nav class="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-white dark:bg-background-dark border-t border-[#e7f3ea] dark:border-white/10">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex items-center justify-between h-16">
+            <a href="index.html" class="flex flex-col items-center justify-center gap-1 text-xs text-primary" aria-current="page">
+                <span class="material-symbols-outlined text-lg">home</span>
+                <span class="text-[11px]">Home</span>
+            </a>
+            <a href="package.html" class="flex flex-col items-center justify-center gap-1 text-xs text-[#0d1b11] dark:text-gray-300 hover:text-primary">
+                <span class="material-symbols-outlined text-lg">inventory_2</span>
+                <span class="text-[11px]">Packages</span>
+            </a>
+            <a href="about.html" class="flex flex-col items-center justify-center gap-1 text-xs text-[#0d1b11] dark:text-gray-300 hover:text-primary">
+                <span class="material-symbols-outlined text-lg">info</span>
+                <span class="text-[11px]">About</span>
+            </a>
+            <a href="https://wa.me/919186049279" class="flex flex-col items-center justify-center gap-1 text-xs text-[#0d1b11] dark:text-gray-300 hover:text-primary">
+                <span class="material-symbols-outlined text-lg">chat</span>
+                <span class="text-[11px]">Chat</span>
+            </a>
+            <a href="contact.html" class="flex items-center justify-center ml-2 bg-primary text-[#0d1b11] rounded-full px-3 py-2 text-sm font-bold shadow-md shadow-primary/20">
+                Book
+            </a>
+        </div>
+    </div>
+</nav>
+<!-- How It Works (Timeline) -->
+<section class="py-20 relative">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col md:flex-row gap-12 items-center">
+<div class="w-full md:w-1/2">
+<h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Your journey to paradise,<br/>simplified.</h2>
+<div class="space-y-8">
+<!-- Step 1 -->
+<div class="flex gap-4">
+<div class="flex flex-col items-center">
+<div class="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-background-dark font-bold text-lg">1</div>
+<div class="h-full w-0.5 bg-gray-200 dark:bg-gray-700 mt-2"></div>
+</div>
+<div class="pb-8">
+<h3 class="text-xl font-bold text-gray-900 dark:text-white">Tell us your dates</h3>
+<p class="mt-2 text-gray-600 dark:text-gray-400">Share your tentative dates and preferences via a quick form or chat.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex gap-4">
+<div class="flex flex-col items-center">
+<div class="flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 text-gray-500 font-bold text-lg dark:bg-white/10 dark:text-gray-300">2</div>
+<div class="h-full w-0.5 bg-gray-200 dark:bg-gray-700 mt-2"></div>
+</div>
+<div class="pb-8">
+<h3 class="text-xl font-bold text-gray-900 dark:text-white">Get a custom plan</h3>
+<p class="mt-2 text-gray-600 dark:text-gray-400">Receive a tailored itinerary with hotel options and pricing within 24 hours.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex gap-4">
+<div class="flex flex-col items-center">
+<div class="flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 text-gray-500 font-bold text-lg dark:bg-white/10 dark:text-gray-300">3</div>
+</div>
+<div>
+<h3 class="text-xl font-bold text-gray-900 dark:text-white">Land &amp; Enjoy</h3>
+<p class="mt-2 text-gray-600 dark:text-gray-400">Arrive in Srinagar. Your driver and concierge are ready. We handle the rest.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/2">
+<div class="relative rounded-2xl overflow-hidden shadow-2xl aspect-square md:aspect-[4/5] bg-gray-100">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Stunning mountain landscape in Kashmir" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuABNkXVJslJD_3vwOX36HFTn4B3wo97AX_yvg2QomtYviIV46nIWMD1595tGGsSQLd9p5IXeopM7KMMT0bfxRqP3up73tOYnezQvEnmA8G0fF3zpA4_ZSPh6gUirpKdSE-ook4cfoqokz2OHUbysxM0J4hVIB4HLqZ4SueKF18B3b7mJVRfx-v9R-vtb-9sF7t8Y2cZ7tYcx8xFpzXdD_6THq0a1E32DW1GjHnsagP8W7N408ylRU9vk-9BFe9_ptlR7xQCKTvIYhv2');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-8 left-8 right-8">
+<div class="glass-card p-4 rounded-xl border-l-4 border-primary text-gray-900 dark:text-white">
+<p class="font-medium italic">"The planning was effortless. I just showed up and everything was perfect."</p>
+<p class="mt-2 text-sm font-bold opacity-80">- Sarah &amp; Mike, UK</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Comparison Table -->
+<section class="py-16 bg-gray-50 dark:bg-white/5">
+<div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-10">
+<h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Why we are different</h2>
+<p class="mt-2 text-gray-600 dark:text-gray-400">Stop settling for cookie-cutter tour packages.</p>
+</div>
+<div class="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow dark:border-gray-700 dark:bg-gray-900">
+<div class="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4 dark:border-gray-700 dark:bg-white/5">
+<div class="text-center text-sm font-semibold text-gray-500 dark:text-gray-400">Generic Travel Agents</div>
+<div class="text-center text-lg font-bold text-primary">Safar e Kashmir</div>
+</div>
+<div class="divide-y divide-gray-200 dark:divide-gray-700">
+<div class="grid grid-cols-2 items-center p-4 transition-colors hover:bg-gray-50 dark:hover:bg-white/5">
+<div class="text-center text-sm text-gray-600 dark:text-gray-400">Hidden fees &amp; rigid plans</div>
+<div class="flex flex-col items-center justify-center gap-1 text-center">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="text-sm font-semibold text-gray-900 dark:text-white">Transparent pricing &amp; flexibility</span>
+</div>
+</div>
+<div class="grid grid-cols-2 items-center p-4 transition-colors hover:bg-gray-50 dark:hover:bg-white/5">
+<div class="text-center text-sm text-gray-600 dark:text-gray-400">Cookie-cutter itinerary</div>
+<div class="flex flex-col items-center justify-center gap-1 text-center">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="text-sm font-semibold text-gray-900 dark:text-white">Customized local experiences</span>
+</div>
+</div>
+<div class="grid grid-cols-2 items-center p-4 transition-colors hover:bg-gray-50 dark:hover:bg-white/5">
+<div class="text-center text-sm text-gray-600 dark:text-gray-400">Support tickets &amp; emails</div>
+<div class="flex flex-col items-center justify-center gap-1 text-center">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="text-sm font-semibold text-gray-900 dark:text-white">Instant WhatsApp support</span>
+</div>
+</div>
+<div class="grid grid-cols-2 items-center p-4 transition-colors hover:bg-gray-50 dark:hover:bg-white/5">
+<div class="text-center text-sm text-gray-600 dark:text-gray-400">Commission-based recommendations</div>
+<div class="flex flex-col items-center justify-center gap-1 text-center">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="text-sm font-semibold text-gray-900 dark:text-white">Quality-first partners</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Packages Preview -->
+<section class="py-20">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col sm:flex-row justify-between items-end mb-10 gap-4">
+<div>
+<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Popular Experiences</h2>
+<p class="mt-2 text-gray-600 dark:text-gray-400">Curated packages loved by our travelers.</p>
+</div>
+<a class="text-primary font-semibold hover:underline flex items-center gap-1" href="package.html">View all packages <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="group flex flex-col rounded-2xl bg-white shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-all dark:bg-white/5 dark:border-white/10">
+<div class="h-48 w-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Couple sitting on a shikara in Dal Lake" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBkSGyGoxeVD14Mm4QOcF0THZRGETlMZsFGt9Y81Ar4MvUL_I6FWHM8PLcK_HloStc4O-hUTKy7ddb0vNgKL0xD54W6LlgjEoi4Y_cLkCw4uP5Ouy1KmablfsJhwZ9EaG3myDuNRd0oE6bXg8AMGfvDwAnR1BMnhAf1NbvjHGH20BLhL7YsLZQEjaTJBf3gfBI8CZy7EFK4Ont7pOupRDbUF1gkhP-YqVfqtQIhLrNq6u5ymCaY8EQXE6Y9xUraAW3D0ZKqLPQBzYaw');"></div>
+<div class="flex flex-1 flex-col p-6">
+<div class="mb-2 flex items-center gap-2">
+<span class="inline-flex items-center rounded-md bg-pink-100 px-2 py-1 text-xs font-medium text-pink-700 dark:bg-pink-900/30 dark:text-pink-300">Honeymoon</span>
+<span class="inline-flex items-center rounded-md bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600 dark:bg-gray-800 dark:text-gray-300">5 Days</span>
+</div>
+<h3 class="text-xl font-bold text-gray-900 dark:text-white">The Romantic Getaway</h3>
+<p class="mt-2 flex-1 text-sm text-gray-600 dark:text-gray-400">Houseboat stay, private shikara rides, and a candle-lit dinner in Pahalgam.</p>
+<div class="mt-6 flex items-center justify-between">
+<span class="text-lg font-bold text-gray-900 dark:text-white">₹18,500 <span class="text-sm font-normal text-gray-500">/ person</span></span>
+<button class="rounded-lg bg-gray-900 px-3 py-2 text-sm font-semibold text-white transition hover:bg-gray-700 dark:bg-white dark:text-gray-900 dark:hover:bg-gray-200">Details</button>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group flex flex-col rounded-2xl bg-white shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-all dark:bg-white/5 dark:border-white/10">
+<div class="h-48 w-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Snow covered mountains in Gulmarg" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBBfEWXb12WOTXtyGNkMEebAq1DW043mK0YDdH2byv3B-C9Qa2TbOSPu-oDT3eqdIlmrzEpRNbI6gVtGb30kVBEqUGBeXlHxksE7phh9B_YbzGPbXVLGIEr6UbFg0t8YmHzt_iE6rTKQVIKNfuiatnmaZ8YkaMZQZSj_y1hiCMkVZ0yIc1hR0ftpH94AXgWGxidMwPR3DQBsXloJFFyvjJYldIRJAwwRfnU1JdjpJXMu-LaCGwWq5S1RdAsTh4kucJL7K57AFORE28n');"></div>
+<div class="flex flex-1 flex-col p-6">
+<div class="mb-2 flex items-center gap-2">
+<span class="inline-flex items-center rounded-md bg-blue-100 px-2 py-1 text-xs font-medium text-blue-700 dark:bg-blue-900/30 dark:text-blue-300">Adventure</span>
+<span class="inline-flex items-center rounded-md bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600 dark:bg-gray-800 dark:text-gray-300">6 Days</span>
+</div>
+<h3 class="text-xl font-bold text-gray-900 dark:text-white">Winter Wonderland</h3>
+<p class="mt-2 flex-1 text-sm text-gray-600 dark:text-gray-400">Skiing in Gulmarg, snow treks, and cozy cabin stays with heating.</p>
+<div class="mt-6 flex items-center justify-between">
+<span class="text-lg font-bold text-gray-900 dark:text-white">₹22,000 <span class="text-sm font-normal text-gray-500">/ person</span></span>
+<button class="rounded-lg bg-gray-900 px-3 py-2 text-sm font-semibold text-white transition hover:bg-gray-700 dark:bg-white dark:text-gray-900 dark:hover:bg-gray-200">Details</button>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group flex flex-col rounded-2xl bg-white shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-all dark:bg-white/5 dark:border-white/10">
+<div class="h-48 w-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Tulip garden in Srinagar" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDl3a0wFM7MN-NV2sbNg3e2zNcyGVyyOopKe3C4oWQO2jQSJ7Fmf2svNRk6afKxRrjSdSrdgREiYrbHBLMC8F4kmyrwHMgvHRhUK5bYAD6HSvTa2gB-JIo2WFo20fPy2Ve1Yo4AoyhvGc7IIn4nM4hUjM9gwiXLYDEUdulwaLXzkZBC9u4n_YnseN9wUuF_6PLoREnVu3sL4AzrBYKo5-zaA-2_QC2-oZWZmrhjuBr_DZ3Kyx6KeyvWRVbzKsM7j71lyJXAz7de4gik');"></div>
+<div class="flex flex-1 flex-col p-6">
+<div class="mb-2 flex items-center gap-2">
+<span class="inline-flex items-center rounded-md bg-yellow-100 px-2 py-1 text-xs font-medium text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-300">Leisure</span>
+<span class="inline-flex items-center rounded-md bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600 dark:bg-gray-800 dark:text-gray-300">4 Days</span>
+</div>
+<h3 class="text-xl font-bold text-gray-900 dark:text-white">Valley Essence</h3>
+<p class="mt-2 flex-1 text-sm text-gray-600 dark:text-gray-400">Perfect for families. Mughal gardens, city tour, and easy day trips.</p>
+<div class="mt-6 flex items-center justify-between">
+<span class="text-lg font-bold text-gray-900 dark:text-white">₹14,500 <span class="text-sm font-normal text-gray-500">/ person</span></span>
+<button class="rounded-lg bg-gray-900 px-3 py-2 text-sm font-semibold text-white transition hover:bg-gray-700 dark:bg-white dark:text-gray-900 dark:hover:bg-gray-200">Details</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-16 bg-background-light dark:bg-white/5">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<h2 class="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">Travelers love us</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Review 1 -->
+<div class="rounded-xl bg-white p-6 shadow-sm border border-gray-100 dark:bg-white/5 dark:border-white/10">
+<div class="flex items-center gap-1 text-yellow-400 mb-4">
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+</div>
+<p class="text-gray-600 dark:text-gray-300 mb-6">"Honestly, the WhatsApp support was a game changer. We got stuck due to a road closure and they rearranged our hotel in minutes."</p>
+<div class="flex items-center gap-3">
+<div class="h-10 w-10 rounded-full bg-gray-200 bg-cover bg-center" data-alt="Avatar of Rahul" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB5o097hjaTV69hkJoLsR1rIZsffUahEcCDSz12hZig0PBvMDLpzmB7ol1HzpZkPb3qsjsj4OMridOaGeR8vSaY7wKNRX3CEHTyWDzds_uBIyEFKTXpbsJwg5vm_cSbR2hPPFkrLt7zEJncQIgofViTUBuae9cP2vK4kfMG91MqUO5JKGRkYXeugA8PtpJ6jk5xSC8urWdONASPrxYFCZuEbaKpGLERWGeik4Ouaabx4TWimVZnuChnECkhoS2Y-MQABqaB-ffcyaTx')"></div>
+<div>
+<p class="font-bold text-sm text-gray-900 dark:text-white">Rahul Verma</p>
+<p class="text-xs text-gray-500">New Delhi, India</p>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="rounded-xl bg-white p-6 shadow-sm border border-gray-100 dark:bg-white/5 dark:border-white/10">
+<div class="flex items-center gap-1 text-yellow-400 mb-4">
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+</div>
+<p class="text-gray-600 dark:text-gray-300 mb-6">"This didn't feel like a tour agent. It felt like visiting a friend who lives in Kashmir. The food recommendations were spot on!"</p>
+<div class="flex items-center gap-3">
+<div class="h-10 w-10 rounded-full bg-gray-200 bg-cover bg-center" data-alt="Avatar of Priya" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCCbZ6wQvR0JNSomIlWkYQroE2InGghjeW-WIRS1BomneRt7zw2VINSQwH6NH7vNhVrrw1yGqh4yf7nXQQCH0oSBX9GLumaBbQrT2FDrj7bl17GsUHZo61z_H4HF-TIYLEmLSSRWFzXDUu3FFGP2Ta4o66ju43JDquANth23fiiBtRsjYHIfpHMSl9a-0RHKZjaTQ2ykCkHC3pHer6uZCZqj0xB_za7BY7Fptaa9knQltGThMYrr65HHX7sMuP6MH1i3dM1wGMwGWti')"></div>
+<div>
+<p class="font-bold text-sm text-gray-900 dark:text-white">Priya Sethi</p>
+<p class="text-xs text-gray-500">Mumbai, India</p>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="rounded-xl bg-white p-6 shadow-sm border border-gray-100 dark:bg-white/5 dark:border-white/10 hidden lg:block">
+<div class="flex items-center gap-1 text-yellow-400 mb-4">
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+</div>
+<p class="text-gray-600 dark:text-gray-300 mb-6">"My parents are elderly and I was worried about their comfort. The team ensured a smooth vehicle and accessible hotels everywhere."</p>
+<div class="flex items-center gap-3">
+<div class="h-10 w-10 rounded-full bg-gray-200 bg-cover bg-center" data-alt="Avatar of Daniel" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCJB5HX1bc36urAeC6f6D6QvVHSB1oWKhbEYm_o82oTFfNrjH3I2SfRRNkA2rYWo-DaxpB6uril6fIPVEUdWmI4vNX8dBNitPX297FROJiW4wxmxAhmpfdzMj2umQ8Ju10Tz0gagxj7dH6h9og4zQWdFhFcqDedSMCRrQZgVPRiik7lxO2I7fmMO6j1sRlfNTDrjfl0BJR6Ns98Frp1TXwOhM2usTSGqCrREq80uDnwsRLAQAZJbOxJWA1lExU2eGMpfFp5HWz29LFF')"></div>
+<div>
+<p class="font-bold text-sm text-gray-900 dark:text-white">Daniel K.</p>
+<p class="text-xs text-gray-500">Bangalore, India</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer CTA -->
+<section class="py-20 relative overflow-hidden">
+<div class="absolute inset-0 bg-gray-900 dark:bg-black"></div>
+<div class="absolute inset-0 opacity-20 bg-cover bg-center" data-alt="Dark abstract mountain texture" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCgO2C3XxLpQ5xi-UuMQ8Ln73S73xYw81IcX-yaK2068J2D5V7g6DFa1Mk7Ctjl2ntKa7TnYNe7flNULcYBD9nGR6a75j5LARrhusZm93hrnuVHrqgrfSy24j_IpxHA1fmCtCZ335f47EyZ49ybr37CbMoeXcLxFgdVyo-6FSvV-urYUJKOpd2br_KTR4hReQGM88cqUnZgq5kzD9-RNXbnUad4PIgpm1jqBfbXNe0HIsjVqNtRumHh-XTmF0JWwGTGfve8QwNjVLRX');"></div>
+<div class="absolute top-0 right-0 w-96 h-96 bg-primary/20 rounded-full blur-[80px]"></div>
+<div class="relative mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
+<h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+                Ready to plan your trip?
+            </h2>
+<p class="mx-auto mt-4 max-w-2xl text-lg text-gray-300">
+                It starts with a simple "Hello". No automated bots, just real people ready to help you plan.
+            </p>
+<div class="mt-8 flex justify-center gap-4">
+<button class="flex items-center gap-2 rounded-xl bg-primary px-8 py-4 text-base font-bold text-background-dark shadow-lg shadow-primary/40 hover:bg-[#0fd641] hover:scale-105 transition-transform">
+<span class="material-symbols-outlined">chat</span>
+                    Message on WhatsApp
+                </button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="border-t border-gray-200 bg-white dark:bg-background-dark dark:border-white/10">
+    <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row items-center md:justify-between gap-4">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="./logo.png" alt="Safar e Kashmir logo" class="h-7 w-auto opacity-100" style="filter: saturate(1.06) contrast(1.05);"/>
+                <span class="text-lg font-bold text-gray-900 dark:text-white">Safar e Kashmir</span>
+            </a>
+
+            <div class="flex items-center gap-4">
+                <a class="text-gray-400 hover:text-primary flex items-center gap-2" href="https://www.instagram.com/truekashmirtravels/?utm_source=qr&r=nametag">
+                    <span class="sr-only">Instagram</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.468 2.37c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" fill-rule="evenodd"></path></svg>
+                    <span class="text-sm font-medium hidden sm:inline">Follow us on Instagram</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body></html>

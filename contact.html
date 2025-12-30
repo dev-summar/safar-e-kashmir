@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact - Safar e Kashmir</title>
+<!-- Google Fonts & Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec49",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102215",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar for text area if needed */
+        textarea::-webkit-scrollbar {
+            width: 8px;
+        }
+        textarea::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        textarea::-webkit-scrollbar-thumb {
+            background-color: rgba(76, 154, 95, 0.3);
+            border-radius: 20px;
+        }
+        /* Strong logo rendering fixes to ensure visibility across browsers */
+        .navbar-logo img {
+            opacity: 1 !important;
+            filter: saturate(1.10) contrast(1.12) !important;
+            image-rendering: -webkit-optimize-contrast !important;
+            image-rendering: crisp-edges !important;
+            image-rendering: -moz-crisp-edges !important;
+            -webkit-backface-visibility: hidden !important;
+            backface-visibility: hidden !important;
+            transform: translateZ(0) !important;
+            will-change: transform !important;
+            display: block !important;
+            max-width: 100% !important;
+            height: auto !important;
+            -webkit-font-smoothing: antialiased !important;
+            -moz-osx-font-smoothing: grayscale !important;
+        }
+        .navbar-logo {
+            background: #ffffff !important;
+            box-shadow: 0 6px 18px rgba(2,6,23,0.06) !important;
+            border-radius: 0.375rem !important;
+            padding: 0.375rem !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .navbar-logo img { transition: none !important; transform: none !important; will-change: auto !important; }
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-[#0d1b11] dark:text-gray-100 flex flex-col min-h-screen overflow-x-hidden">
+<header class="sticky top-0 z-50 w-full border-b border-solid border-b-[#e7f3ea] dark:border-[#2a4030] bg-[#f8fcf9] dark:bg-[#102215]">
+    <div class="mx-auto flex h-16 max-w-7xl items-center px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center gap-3 flex-shrink-0">
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="navbar-logo h-10 w-10 rounded-md bg-white shadow-sm flex items-center justify-center p-1.5 overflow-hidden">
+                    <img src="./logo.png" alt="Safar e Kashmir logo" class="h-7 w-auto opacity-100" style="filter: saturate(1.06) contrast(1.05);"/>
+                </div>
+                <span class="text-lg font-bold tracking-tight text-[#0d1b11] dark:text-white">Safar e Kashmir</span>
+            </a>
+        </div>
+
+        <div class="flex-1 flex justify-center">
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="index.html" class="text-sm font-medium text-[#0d1b11] dark:text-gray-300 hover:text-primary transition-colors">Home</a>
+                <a href="package.html" class="text-sm font-medium text-[#0d1b11] dark:text-gray-300 hover:text-primary transition-colors">Packages</a>
+                <a href="about.html" class="text-sm font-medium text-[#0d1b11] dark:text-gray-300 hover:text-primary transition-colors">About</a>
+                <a href="contact.html" class="text-sm font-medium text-primary" aria-current="page">Contact</a>
+            </nav>
+        </div>
+
+        <div class="hidden md:flex items-center gap-4 flex-shrink-0">
+            <a href="https://wa.me/919186049279" class="relative group overflow-hidden rounded-lg bg-primary transition-all duration-300 h-10 px-5 flex items-center justify-center gap-2 text-[#0d1b11] text-sm font-bold shadow-glow hover:shadow-lg transform hover:-translate-y-0.5">
+                <span class="absolute inset-0 w-full h-full animate-shimmer pointer-events-none"></span>
+                <span class="material-symbols-outlined text-[18px]">chat</span>
+                <span>Chat on WhatsApp</span>
+            </a>
+            <a href="contact.html" class="flex items-center justify-center h-10 ml-2 bg-primary text-[#0d1b11] rounded-full px-4 text-sm font-bold shadow-md shadow-primary/20">
+                Book Now
+            </a>
+        </div>
+    </div>
+</header>
+<!-- Main Content Split Layout -->
+<main class="flex-grow flex flex-col lg:flex-row relative">
+<!-- Left Panel: Storytelling & Visuals -->
+<div class="relative w-full lg:w-1/2 min-h-[40vh] lg:min-h-[calc(100vh-80px)] overflow-hidden group">
+<!-- Background Image -->
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-[20s] ease-in-out group-hover:scale-110" data-alt="Serene Dal Lake in Kashmir with shikara boats and mountains" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBVJFCGmrXv55NWVYWC-yWd8-Qrz2pUJmCDuiLMbsYi8LZ5vHWCFtswEu95GNmyTCnOvf-AxsSWbf0Cu1Eto46FXeCcJbOMKFm_xbpv9v2NbnIAg-EYiun9wKY5o3eZptXMlo1cbSrv1pqcVXvfQ2DkFgVLZQ4a9lJXYmwNWZU3RYGoFrWM7A2hBLXXDNcvrhQs50Jb4k3MM8llyL6B2XfLfrskWRRNULEZq6PAtC-tPQPIm_LW74ffW9dpXyDJRDKOgk2pslMzaH93');">
+</div>
+<!-- Gradient Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-[#102215]/90 via-[#102215]/40 to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-[#102215]/80"></div>
+<!-- Text Content -->
+<div class="absolute inset-0 flex flex-col justify-end p-8 lg:p-16 lg:justify-center z-10 text-white">
+<div class="max-w-md">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-6 w-fit">
+<span class="material-symbols-outlined text-sm text-primary">verified</span>
+<span class="text-xs font-medium uppercase tracking-wider text-primary">Verified Local Experts</span>
+</div>
+<h1 class="text-4xl lg:text-6xl font-black leading-tight tracking-[-0.033em] mb-4 drop-shadow-sm">
+                        Experience Kashmir, Unfiltered.
+                    </h1>
+<p class="text-lg text-gray-200 leading-relaxed font-normal mb-8 max-w-sm">
+                        Speak to a local expert today. No bots, just real planning for your perfect mountain getaway.
+                    </p>
+<div class="hidden lg:flex items-center gap-4 mt-8">
+<div class="flex -space-x-3">
+<img alt="Avatar of travel agent" class="w-10 h-10 rounded-full border-2 border-[#102215]" data-alt="Portrait of a travel agent" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCc-bPDj2F5FmSthExtBY8RnZopzg4GVl2x9kcv_Hm0n5JkfGuYr7YbDyw5EDgEA2KqzLjsswjJzRHk3B-FUoNt1hb9RnPY-06e4BRZ08ILkjljoTMAZq5Z9nJwoJJx0ZvmFxnAOO44UkS8t0UWlFbvkwCe5wDxdEFmuwZb__h-k175eVYSjzJ9aMDgDXff8FiLMe1g7_rqbeP2uutHX6LPr9SyrTyDaIcheaKMkm3KLFyiQHAR5Ry0wbW1-hJUMsLChOYDwzh3gFa_"/>
+<img alt="Avatar of travel agent" class="w-10 h-10 rounded-full border-2 border-[#102215]" data-alt="Portrait of a travel agent" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiCDJTPG-JlMjyPSrW3tnMdpjk7kru4ZId3zlcViZIZKQ8GFWkBww24WL3x9pJCazJFNTA-Y7TvADOMcjHUdcq-WeU8pNQe-h61phn0uaqIUs7EK7Jy4Z1zyiOB8s8ACJsgHQJENaJnIHbxZ3vXEM2b7PvPukQMxx0diPjA2uLenA6OcH_aRpavCi3XlBrW2t4Cnn5OFXTcqVxuuWNnMoOpFHl1bPcpRIb3d3MqPwL4IdlqssePkgaqdDY-ooJr9XoXGtySKDkUvJg"/>
+<img alt="Avatar of travel agent" class="w-10 h-10 rounded-full border-2 border-[#102215]" data-alt="Portrait of a travel agent" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuTFXAPbZkO_GK5UFS4gu0VL447wcaMEZm9A1zvM9qxNWEI7KpSlJZI9M1ymZvhI3ivhob42gO97Y7S6KaI1n9npNnp16ajbeD5M-MWwrWD-V7N7ww1f4wQuJHJ-frNIuFUlQV5qt-Ohep0IRamZ4y1GSFU12h0dhBAjLU0IA1MU-QA6zg6ZRL5252u8aDV_RV2_VewTbpcckVJ8Z4IXmSqNdlhSOJgZUtf4HNasrd_-eiCcoj93EdojN0BGD_zbjrSlGHZIHYOhCd"/>
+</div>
+<div class="flex flex-col">
+<div class="flex text-yellow-400 text-sm">
+<span class="material-symbols-outlined text-[16px] fill-current">star</span>
+<span class="material-symbols-outlined text-[16px] fill-current">star</span>
+<span class="material-symbols-outlined text-[16px] fill-current">star</span>
+<span class="material-symbols-outlined text-[16px] fill-current">star</span>
+<span class="material-symbols-outlined text-[16px] fill-current">star</span>
+</div>
+<span class="text-xs text-gray-300 font-medium">Trusted by 2,000+ travelers</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Panel: Enquiry Form -->
+<div class="w-full lg:w-1/2 flex items-center justify-center p-4 lg:p-12 bg-background-light dark:bg-[#0a160d]">
+<!-- Glassmorphic Card -->
+<div class="w-full max-w-lg relative">
+<!-- Decorative Glow -->
+<div class="absolute -top-10 -right-10 w-64 h-64 bg-primary/20 rounded-full blur-[80px] opacity-60 pointer-events-none"></div>
+<div class="absolute -bottom-10 -left-10 w-64 h-64 bg-blue-500/10 rounded-full blur-[80px] opacity-60 pointer-events-none"></div>
+<div class="relative bg-white/70 dark:bg-[#1a2c20]/60 backdrop-blur-xl border border-white/50 dark:border-white/10 shadow-xl rounded-2xl p-6 lg:p-10">
+<div class="mb-8 text-center lg:text-left">
+<h2 class="text-2xl font-bold text-[#0d1b11] dark:text-white mb-2">Start your journey</h2>
+<p class="text-sm text-gray-500 dark:text-gray-400">Fill in the details below and we'll craft your itinerary.</p>
+</div>
+<form class="flex flex-col gap-5">
+<!-- Row 1: Name & Phone -->
+<div class="flex flex-col sm:flex-row gap-4">
+<label class="flex flex-col flex-1 group">
+<span class="text-[#0d1b11] dark:text-gray-200 text-xs font-semibold uppercase tracking-wider pb-1.5 ml-1">Full Name</span>
+<div class="relative">
+<input class="form-input flex w-full rounded-lg border border-[#cfe7d5] dark:border-[#2a4030] bg-[#f8fcf9] dark:bg-[#15261a] px-4 py-3 text-base text-[#0d1b11] dark:text-white placeholder:text-[#4c9a5f] dark:placeholder:text-[#4c9a5f]/70 focus:border-primary focus:ring-1 focus:ring-primary transition-all shadow-sm group-hover:shadow-md" placeholder="e.g. Summar Kumar" type="text"/>
+<span class="material-symbols-outlined absolute right-3 top-3.5 text-[#4c9a5f] text-lg pointer-events-none">person</span>
+</div>
+</label>
+<label class="flex flex-col flex-1 group">
+<span class="text-[#0d1b11] dark:text-gray-200 text-xs font-semibold uppercase tracking-wider pb-1.5 ml-1">WhatsApp Number</span>
+<div class="relative">
+<input class="form-input flex w-full rounded-lg border border-[#cfe7d5] dark:border-[#2a4030] bg-[#f8fcf9] dark:bg-[#15261a] px-4 py-3 text-base text-[#0d1b11] dark:text-white placeholder:text-[#4c9a5f] dark:placeholder:text-[#4c9a5f]/70 focus:border-primary focus:ring-1 focus:ring-primary transition-all shadow-sm group-hover:shadow-md" placeholder="+91 ..." type="tel"/>
+<span class="material-symbols-outlined absolute right-3 top-3.5 text-[#4c9a5f] text-lg pointer-events-none">chat</span>
+</div>
+</label>
+</div>
+<!-- Row 2: Date & Group Size -->
+<div class="flex flex-col sm:flex-row gap-4">
+<label class="flex flex-col flex-1 group">
+<span class="text-[#0d1b11] dark:text-gray-200 text-xs font-semibold uppercase tracking-wider pb-1.5 ml-1">Travel Month</span>
+<div class="relative">
+  <input id="travelMonth" type="month" class="peer absolute inset-0 w-full h-full opacity-0 cursor-pointer z-20" aria-label="Travel Month" />
+  <div class="form-input w-full rounded-lg border border-[#cfe7d5] dark:border-[#2a4030] bg-[#f8fcf9] dark:bg-[#15261a] px-4 py-3 text-base text-[#0d1b11] dark:text-white transition-all shadow-sm group-hover:shadow-md peer-focus:border-primary peer-focus:ring-1 peer-focus:ring-primary">
+    <span id="travelMonthDisplay" class="text-[#4c9a5f]">Select travel month</span>
+  </div>
+  <span class="material-symbols-outlined absolute right-3 top-3.5 text-[#4c9a5f] text-lg pointer-events-none">calendar_month</span>
+</div>
+</label>
+<label class="flex flex-col w-full sm:w-1/3 group">
+<span class="text-[#0d1b11] dark:text-gray-200 text-xs font-semibold uppercase tracking-wider pb-1.5 ml-1">Group Size</span>
+<div class="relative">
+<input class="form-input flex w-full rounded-lg border border-[#cfe7d5] dark:border-[#2a4030] bg-[#f8fcf9] dark:bg-[#15261a] px-4 py-3 text-base text-[#0d1b11] dark:text-white placeholder:text-[#4c9a5f] dark:placeholder:text-[#4c9a5f]/70 focus:border-primary focus:ring-1 focus:ring-primary transition-all shadow-sm group-hover:shadow-md" min="1" placeholder="2" type="number"/>
+<span class="material-symbols-outlined absolute right-3 top-3.5 text-[#4c9a5f] text-lg pointer-events-none">group</span>
+</div>
+</label>
+</div>
+<!-- Row 3: Message -->
+<label class="flex flex-col group">
+<span class="text-[#0d1b11] dark:text-gray-200 text-xs font-semibold uppercase tracking-wider pb-1.5 ml-1">Tell us about your dream trip</span>
+<textarea class="form-textarea flex w-full rounded-lg border border-[#cfe7d5] dark:border-[#2a4030] bg-[#f8fcf9] dark:bg-[#15261a] px-4 py-3 text-base text-[#0d1b11] dark:text-white placeholder:text-[#4c9a5f] dark:placeholder:text-[#4c9a5f]/70 focus:border-primary focus:ring-1 focus:ring-primary transition-all shadow-sm resize-none group-hover:shadow-md" placeholder="We love hiking, local food, and want to stay in a houseboat..." rows="4"></textarea>
+</label>
+<!-- Submit Button -->
+<button class="mt-2 group relative flex w-full items-center justify-center overflow-hidden rounded-lg bg-primary py-4 text-base font-bold text-[#0d1b11] shadow-lg shadow-primary/30 transition-all hover:scale-[1.01] hover:bg-[#10c83e] active:scale-[0.98]" type="button">
+<span class="relative z-10 flex items-center gap-2">
+                                Request Itinerary
+                                <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+</span>
+</button>
+<!-- Trust Signals -->
+<div class="mt-4 flex flex-wrap items-center justify-center gap-4 border-t border-[#e7f3ea] dark:border-white/10 pt-6">
+<div class="flex items-center gap-2 text-xs font-medium text-gray-500 dark:text-gray-400">
+<span class="material-symbols-outlined text-[18px] text-primary">verified_user</span>
+                                Secure Booking
+                            </div>
+<div class="hidden h-3 w-px bg-gray-300 dark:bg-gray-700 sm:block"></div>
+<div class="flex items-center gap-2 text-xs font-medium text-gray-500 dark:text-gray-400">
+<span class="material-symbols-outlined text-[18px] text-primary">support_agent</span>
+                                24/7 Local Support
+                            </div>
+<div class="hidden h-3 w-px bg-gray-300 dark:bg-gray-700 sm:block"></div>
+<div class="flex items-center gap-2 text-xs font-medium text-gray-500 dark:text-gray-400">
+<span class="material-symbols-outlined text-[18px] text-primary">thumb_up</span>
+                                No Hidden Costs
+                            </div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</main>
+<!-- Mobile spacer so page content isn't obscured by sticky nav -->
+<div class="md:hidden h-20"></div>
+
+<!-- Mobile bottom navigation (mobile-only) -->
+<nav class="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-white dark:bg-background-dark border-t border-[#e7f3ea] dark:border-white/10">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex items-center justify-between h-16">
+            <a href="index.html" class="flex flex-col items-center justify-center gap-1 text-xs text-[#0d1b11] dark:text-gray-300 hover:text-primary">
+                <span class="material-symbols-outlined text-lg">home</span>
+                <span class="text-[11px]">Home</span>
+            </a>
+            <a href="package.html" class="flex flex-col items-center justify-center gap-1 text-xs text-[#0d1b11] dark:text-gray-300 hover:text-primary">
+                <span class="material-symbols-outlined text-lg">inventory_2</span>
+                <span class="text-[11px]">Packages</span>
+            </a>
+            <a href="contact.html" class="flex flex-col items-center justify-center gap-1 text-xs text-primary" aria-current="page">
+                <span class="material-symbols-outlined text-lg">call</span>
+                <span class="text-[11px]">Contact</span>
+            </a>
+            <a href="https://wa.me/919186049279" class="flex flex-col items-center justify-center gap-1 text-xs text-[#0d1b11] dark:text-gray-300 hover:text-primary">
+                <span class="material-symbols-outlined text-lg">chat</span>
+                <span class="text-[11px]">Chat</span>
+            </a>
+            <a href="contact.html" class="flex items-center justify-center ml-2 bg-primary text-[#0d1b11] rounded-full px-3 py-2 text-sm font-bold shadow-md shadow-primary/20">
+                Book
+            </a>
+        </div>
+    </div>
+</nav>
+<script>
+(function(){
+  var input = document.getElementById('travelMonth');
+  var display = document.getElementById('travelMonthDisplay');
+  if(!input || !display) return;
+  function format(v){
+    if(!v) return 'Select travel month';
+    var parts = v.split('-'); if(parts.length!==2) return v;
+    var d = new Date(parts[0], parts[1]-1);
+    return d.toLocaleString(undefined, { month: 'long', year: 'numeric' });
+  }
+  function update(){
+    var txt = format(input.value);
+    display.textContent = txt;
+    display.classList.toggle('text-[#4c9a5f]', !input.value);
+  }
+  input.addEventListener('change', update);
+  input.addEventListener('blur', update);
+  input.addEventListener('focus', function(){ display.classList.remove('text-[#4c9a5f]'); });
+  update();
+})();
+</script>
+<!-- Footer -->
+<footer class="border-t border-gray-200 bg-white dark:bg-background-dark dark:border-white/10">
+    <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row items-center md:justify-between gap-4">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="./logo.png" alt="Safar e Kashmir logo" class="h-7 w-auto opacity-100" style="filter: saturate(1.06) contrast(1.05);"/>
+                <span class="text-lg font-bold text-gray-900 dark:text-white">Safar e Kashmir</span>
+            </a>
+
+            <div class="flex items-center gap-4">
+                <a class="text-gray-400 hover:text-primary flex items-center gap-2" href="https://www.instagram.com/truekashmirtravels/?utm_source=qr&r=nametag">
+                    <span class="sr-only">Instagram</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.468 2.37c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" fill-rule="evenodd"></path></svg>
+                    <span class="text-sm font-medium hidden sm:inline">Follow us on Instagram</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body></html>

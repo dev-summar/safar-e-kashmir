@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Safar e Kashmir - Packages</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec49",
+                        "primary-dark": "#0eb538",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102215",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#1a2e22",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px" },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'glow': '0 0 15px rgba(19, 236, 73, 0.3)',
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar for clean look */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+        
+        /* Subtle shimmer animation */
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+        .animate-shimmer {
+            background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 100%);
+            background-size: 200% 100%;
+            animation: shimmer 3s infinite;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#0d1b11] dark:text-white font-display min-h-screen flex flex-col overflow-x-hidden transition-colors duration-300">
+<header class="sticky top-0 z-50 w-full border-b border-[#e7f3ea] bg-background-light/80 backdrop-blur-md dark:border-gray-800 dark:bg-background-dark/80">
+    <div class="mx-auto flex h-16 max-w-7xl items-center px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center gap-3 flex-shrink-0">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="./logo.png" alt="Safar e Kashmir logo" class="h-7 w-auto opacity-100" style="filter: saturate(1.06) contrast(1.05);"/>
+                <span class="text-lg font-bold tracking-tight text-[#0d1b11] dark:text-white">Safar e Kashmir</span>
+            </a>
+        </div>
+
+        <div class="flex-1 flex justify-center">
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="index.html" class="text-sm font-medium text-[#0d1b11] dark:text-gray-300 hover:text-primary transition-colors">Home</a>
+                <a href="package.html" class="text-sm font-medium text-primary" aria-current="page">Packages</a>
+                <a href="about.html" class="text-sm font-medium text-[#0d1b11] dark:text-gray-300 hover:text-primary transition-colors">About</a>
+                <a href="contact.html" class="text-sm font-medium text-[#0d1b11] dark:text-gray-300 hover:text-primary transition-colors">Contact</a>
+            </nav>
+        </div>
+
+        <div class="hidden md:flex items-center gap-4 flex-shrink-0">
+            <a href="https://wa.me/919186049279" class="relative group overflow-hidden rounded-lg bg-primary transition-all duration-300 h-10 px-5 flex items-center justify-center gap-2 text-[#0d1b11] text-sm font-bold shadow-glow hover:shadow-lg transform hover:-translate-y-0.5">
+                <span class="absolute inset-0 w-full h-full animate-shimmer pointer-events-none"></span>
+                <span class="material-symbols-outlined text-[18px]">chat</span>
+                <span>Chat on WhatsApp</span>
+            </a>
+            <a href="contact.html" class="flex items-center justify-center h-10 ml-2 bg-primary text-[#0d1b11] rounded-full px-4 text-sm font-bold shadow-md shadow-primary/20">
+                Book Now
+            </a>
+        </div>
+    </div>
+</header>
+<!-- Hero Section -->
+<section class="relative w-full pt-10 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+<div class="relative overflow-hidden rounded-2xl bg-surface-light dark:bg-surface-dark shadow-soft">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Breathtaking view of Dal Lake Kashmir with mountains in background" style='background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCghT0eT7f6A_PL4szEJJfeaPNLZ_Nf0bcT93_zbk-PRjKMxH6FYaW1cxz7ohLJ2NcoUzCGWYXrJyJPFR0ZkvQ5ZPYcsDkJRSJix26FoIrcZu8e1-veGefXRck9qrwtAzB5gBe_YFHD8oYMuXOhz7AwF6ZBEeVVd8msvJvjc0rmBEYI8zCflA58zv2y0Vy68WZejDyh_1Eec8gBxtjk2zI_I7YCaMWYlN-DDaoND4bsteUqsTTj6jWvVwz6CZ4QUO59rO3Ze7FIDpIp");'></div>
+<div class="relative z-10 flex flex-col items-center justify-center text-center py-20 px-6 sm:py-28">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 text-white text-xs font-medium mb-6">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+                    Verified Local Experts
+                </span>
+<h1 class="text-white text-4xl sm:text-5xl md:text-6xl font-black leading-tight tracking-tight mb-4 max-w-3xl">
+                    Curated Kashmir,<br/>Humanly Coordinated
+                </h1>
+<p class="text-gray-100 text-base sm:text-lg font-medium max-w-xl mb-8 leading-relaxed">
+                    Experience Kashmir like a local. Hand-crafted itineraries, coordinated by real humans, not bots.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 w-full justify-center">
+<a href="contact.html" class="h-12 px-8 rounded-lg bg-primary hover:bg-primary-dark text-[#0d1b11] font-bold text-base transition-transform hover:scale-105 active:scale-95 flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(19,236,73,0.4)] inline-block">
+                        Start Planning
+                        <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+<a href="index.html" class="h-12 px-8 rounded-lg bg-white/10 backdrop-blur-md border border-white/30 hover:bg-white/20 text-white font-semibold text-base transition-all flex items-center justify-center gap-2 inline-block">
+                        View Gallery
+                    </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Mobile spacer so page content isn't obscured by sticky nav -->
+<div class="md:hidden h-20"></div>
+
+<!-- Mobile bottom navigation (mobile-only) -->
+<nav class="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-white dark:bg-surface-dark border-t border-[#e7f3ea] dark:border-white/10">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex items-center justify-between h-16">
+            <a href="index.html" class="flex flex-col items-center justify-center gap-1 text-xs text-[#0d1b11] dark:text-gray-300 hover:text-primary">
+                <span class="material-symbols-outlined text-lg">home</span>
+                <span class="text-[11px]">Home</span>
+            </a>
+            <a href="package.html" class="flex flex-col items-center justify-center gap-1 text-xs text-primary" aria-current="page">
+                <span class="material-symbols-outlined text-lg">inventory_2</span>
+                <span class="text-[11px]">Packages</span>
+            </a>
+            <a href="about.html" class="flex flex-col items-center justify-center gap-1 text-xs text-slate-600 hover:text-primary">
+                <span class="material-symbols-outlined text-lg">info</span>
+                <span class="text-[11px]">About</span>
+            </a>
+            <a href="https://wa.me/919186049279" class="flex flex-col items-center justify-center gap-1 text-xs text-slate-600 hover:text-primary">
+                <span class="material-symbols-outlined text-lg">chat</span>
+                <span class="text-[11px]">Chat</span>
+            </a>
+            <a href="contact.html" class="flex items-center justify-center ml-2 bg-primary text-[#0d1b11] rounded-full px-3 py-2 text-sm font-bold shadow-md shadow-primary/20">
+                Book
+            </a>
+        </div>
+    </div>
+</nav>
+<!-- Filters Sticky Bar -->
+<div class="sticky top-16 z-40 w-full py-4 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm border-y border-[#e7f3ea] dark:border-gray-800/50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+<!-- Chips -->
+<div class="flex gap-3 overflow-x-auto pb-1 sm:pb-0 w-full sm:w-auto no-scrollbar mask-gradient-right">
+<button class="shrink-0 h-9 px-4 rounded-full bg-primary text-[#0d1b11] text-sm font-bold shadow-sm transition-all flex items-center gap-2">
+                        All Packages
+                    </button>
+<button class="shrink-0 h-9 px-4 rounded-full bg-white dark:bg-surface-dark border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 text-sm font-medium hover:border-primary hover:text-primary transition-all flex items-center gap-2 group">
+<span class="material-symbols-outlined text-[18px] group-hover:text-primary">family_restroom</span>
+                        Family
+                    </button>
+<button class="shrink-0 h-9 px-4 rounded-full bg-white dark:bg-surface-dark border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 text-sm font-medium hover:border-primary hover:text-primary transition-all flex items-center gap-2 group">
+<span class="material-symbols-outlined text-[18px] group-hover:text-primary">favorite</span>
+                        Honeymoon
+                    </button>
+<button class="shrink-0 h-9 px-4 rounded-full bg-white dark:bg-surface-dark border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 text-sm font-medium hover:border-primary hover:text-primary transition-all flex items-center gap-2 group">
+<span class="material-symbols-outlined text-[18px] group-hover:text-primary">hiking</span>
+                        Adventure
+                    </button>
+<button class="shrink-0 h-9 px-4 rounded-full bg-white dark:bg-surface-dark border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 text-sm font-medium hover:border-primary hover:text-primary transition-all flex items-center gap-2 group">
+<span class="material-symbols-outlined text-[18px] group-hover:text-primary">ac_unit</span>
+                        Winter
+                    </button>
+<button class="shrink-0 h-9 px-4 rounded-full bg-white dark:bg-surface-dark border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 text-sm font-medium hover:border-primary hover:text-primary transition-all flex items-center gap-2 group">
+<span class="material-symbols-outlined text-[18px] group-hover:text-primary">diamond</span>
+                        Luxury
+                    </button>
+</div>
+<!-- Sort/Filter Mobile Toggle -->
+<div class="flex items-center gap-2 shrink-0 ml-auto sm:ml-0">
+<span class="text-xs font-medium text-gray-500 uppercase tracking-wider hidden sm:block">Sort by:</span>
+<button class="flex items-center gap-2 text-sm font-medium text-[#0d1b11] dark:text-white bg-white dark:bg-surface-dark px-3 py-1.5 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-primary transition-colors">
+                        Popularity
+                        <span class="material-symbols-outlined text-[18px]">expand_more</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Content Grid -->
+<main class="flex-grow w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+<!-- Card 1 -->
+<article class="group flex flex-col bg-surface-light dark:bg-surface-dark rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 overflow-hidden hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)] hover:-translate-y-1 transition-all duration-300">
+<div class="relative aspect-[4/3] overflow-hidden">
+<div class="absolute top-3 left-3 z-10">
+<span class="inline-flex items-center px-2.5 py-1 rounded-md bg-primary/90 text-[#0d1b11] text-xs font-bold shadow-sm backdrop-blur-sm">
+                            Best Seller
+                        </span>
+</div>
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Traditional houseboat on Dal Lake during sunset" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBIr-KBkdsD3fbqKPjy-EcX8d_jWjXooWIg5owROp4-8WKQ5M_-g1SS1UAgnYd-42fkSI_4JrRY8W1AnRNW2so4QWMyXYg5BGC5geLIrjjqfQi01FwsIhe7AkiDHUoHNleDsHv1amVUBXDXKvOESa4Fa1tf5pawJpDwHHIbVjuHgPSm80jk89gy7XWpsoF2kvy6tD275hzqpqah0qqTzwW_-GvBecx9zhK_kHHo-VXTSOwBuROIO3NvepYFMq2JRdQRtlYOgddvihI5");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60"></div>
+<div class="absolute bottom-3 left-3 right-3 text-white flex justify-between items-end">
+<div class="flex items-center gap-1 bg-black/40 backdrop-blur-md px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span class="text-xs font-medium">5 Nights / 6 Days</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col flex-grow p-5">
+<div class="flex justify-between items-start mb-2">
+<div>
+<p class="text-primary-dark dark:text-primary text-xs font-semibold uppercase tracking-wide mb-1">Ideal for Couples</p>
+<h3 class="text-lg font-bold text-[#0d1b11] dark:text-white leading-tight">The Royal Valley Escape</h3>
+</div>
+</div>
+<div class="my-4 space-y-2">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<p class="text-sm text-gray-600 dark:text-gray-300">Premium Houseboat Stay</p>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<p class="text-sm text-gray-600 dark:text-gray-300">Private AC Cab &amp; Driver</p>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<p class="text-sm text-gray-600 dark:text-gray-300">Sunset Shikara Ride Included</p>
+</div>
+</div>
+<div class="mt-auto pt-4 border-t border-gray-100 dark:border-gray-700/50">
+<div class="flex flex-col gap-3">
+<div class="flex justify-between items-baseline">
+<span class="text-xs text-gray-500">Starting from</span>
+<span class="text-lg font-bold text-[#0d1b11] dark:text-white">₹24,999<span class="text-xs font-normal text-gray-500 ml-1">/person</span></span>
+</div>
+<div class="grid grid-cols-[1fr_auto] gap-2">
+<a href="https://wa.me/919186049279" class="flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-[#0d1b11] rounded-lg h-10 px-4 text-sm font-bold transition-colors inline-block">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+                                    Plan on WhatsApp
+                                </a>
+<button aria-label="View Details" class="flex items-center justify-center bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-[#0d1b11] dark:text-gray-200 rounded-lg h-10 w-10 transition-colors">
+<span class="material-symbols-outlined text-[20px]">arrow_outward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="group flex flex-col bg-surface-light dark:bg-surface-dark rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 overflow-hidden hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)] hover:-translate-y-1 transition-all duration-300">
+<div class="relative aspect-[4/3] overflow-hidden">
+<div class="absolute top-3 left-3 z-10">
+<span class="inline-flex items-center px-2.5 py-1 rounded-md bg-white/90 dark:bg-black/60 text-gray-800 dark:text-white text-xs font-medium shadow-sm backdrop-blur-sm border border-gray-200 dark:border-gray-700">
+<span class="material-symbols-outlined text-[14px] mr-1 text-orange-500">local_fire_department</span> Trending
+                        </span>
+</div>
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Snow covered mountains in Gulmarg ski resort" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBEjjIkAeKc3DatiNvEdiiqUYzrz3-yHOuFXkyEyg2W5IelySF3bW1vxVbVmds8APxE4YkqCnOjgvpkagfY_-ekCGp6AMphTMDrlbfUHMQusO519xa36wEOCJ4zh9iS1DarnxpUrIN-FlLNWZ7M5wXDYq0m5DbirwgejBSJvYghvrSYeGlQkc4b6q5GhmDX_KakIFZBe9TVMnPLclwbukuOKs5myjWbbBpc1iOum0XBRFfM4Xyjy1NXBkhTwcnDsiucNu_itTknl7KH");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60"></div>
+<div class="absolute bottom-3 left-3 right-3 text-white flex justify-between items-end">
+<div class="flex items-center gap-1 bg-black/40 backdrop-blur-md px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span class="text-xs font-medium">4 Nights / 5 Days</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col flex-grow p-5">
+<div class="flex justify-between items-start mb-2">
+<div>
+<p class="text-primary-dark dark:text-primary text-xs font-semibold uppercase tracking-wide mb-1">Ideal for Adventure</p>
+<h3 class="text-lg font-bold text-[#0d1b11] dark:text-white leading-tight">Winter Wonderland Gulmarg</h3>
+</div>
+</div>
+<div class="my-4 space-y-2">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<p class="text-sm text-gray-600 dark:text-gray-300">Skiing Day Pass</p>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<p class="text-sm text-gray-600 dark:text-gray-300">Gondola Ride Phase 1 &amp; 2</p>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<p class="text-sm text-gray-600 dark:text-gray-300">Heated 4x4 SUV Transport</p>
+</div>
+</div>
+<div class="mt-auto pt-4 border-t border-gray-100 dark:border-gray-700/50">
+<div class="flex flex-col gap-3">
+<div class="flex justify-between items-baseline">
+<span class="text-xs text-gray-500">Starting from</span>
+<span class="text-lg font-bold text-[#0d1b11] dark:text-white">₹18,999<span class="text-xs font-normal text-gray-500 ml-1">/person</span></span>
+</div>
+<div class="grid grid-cols-[1fr_auto] gap-2">
+<a href="https://wa.me/919186049279" class="flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-[#0d1b11] rounded-lg h-10 px-4 text-sm font-bold transition-colors inline-block">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+                                    Plan on WhatsApp
+                                </a>
+<button aria-label="View Details" class="flex items-center justify-center bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-[#0d1b11] dark:text-gray-200 rounded-lg h-10 w-10 transition-colors">
+<span class="material-symbols-outlined text-[20px]">arrow_outward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="group flex flex-col bg-surface-light dark:bg-surface-dark rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 overflow-hidden hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)] hover:-translate-y-1 transition-all duration-300">
+<div class="relative aspect-[4/3] overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Vibrant tulip garden in Srinagar with blooming flowers" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCKRBUV4spVWwlOQgJvQTsFS70KnF5JLNONwV4PaAcjncKwj7YSnsAsgVzSTo5RuCYy-ohhwnfjMj0ui9PN9wr_btGQ_8OhaUhSzGc5N3A5WFEbw7B6qJV0bmHjk3Et7VuPbn9SruQnJ7bApIMyAC6YaiOkrT6b4wwcMb3RbknlebvcXb_lvoh3Dc14ycWcRVKEb3zUdIlR8tuQBdg4LCDEF9SQweeLKjfjQNmnuvkoRfFkKg91OOuVJJ-CDL01QeOsLPiot0hAJMlM");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60"></div>
+<div class="absolute bottom-3 left-3 right-3 text-white flex justify-between items-end">
+<div class="flex items-center gap-1 bg-black/40 backdrop-blur-md px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span class="text-xs font-medium">3 Nights / 4 Days</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col flex-grow p-5">
+<div class="flex justify-between items-start mb-2">
+<div>
+<p class="text-primary-dark dark:text-primary text-xs font-semibold uppercase tracking-wide mb-1">Ideal for Families</p>
+<h3 class="text-lg font-bold text-[#0d1b11] dark:text-white leading-tight">Srinagar Gardens &amp; Chill</h3>
+</div>
+</div>
+<div class="my-4 space-y-2">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<p class="text-sm text-gray-600 dark:text-gray-300">Tulip Garden VIP Entry</p>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<p class="text-sm text-gray-600 dark:text-gray-300">Mughal Gardens Tour</p>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<p class="text-sm text-gray-600 dark:text-gray-300">Family Shikara Ride</p>
+</div>
+</div>
+<div class="mt-auto pt-4 border-t border-gray-100 dark:border-gray-700/50">
+<div class="flex flex-col gap-3">
+<div class="flex justify-between items-baseline">
+<span class="text-xs text-gray-500">Starting from</span>
+<span class="text-lg font-bold text-[#0d1b11] dark:text-white">₹14,499<span class="text-xs font-normal text-gray-500 ml-1">/person</span></span>
+</div>
+<div class="grid grid-cols-[1fr_auto] gap-2">
+<a href="https://wa.me/919186049279" class="flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-[#0d1b11] rounded-lg h-10 px-4 text-sm font-bold transition-colors inline-block">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+                                    Plan on WhatsApp
+                                </a>
+<button aria-label="View Details" class="flex items-center justify-center bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-[#0d1b11] dark:text-gray-200 rounded-lg h-10 w-10 transition-colors">
+<span class="material-symbols-outlined text-[20px]">arrow_outward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 4 -->
+<article class="group flex flex-col bg-surface-light dark:bg-surface-dark rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 overflow-hidden hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)] hover:-translate-y-1 transition-all duration-300">
+<div class="relative aspect-[4/3] overflow-hidden">
+<div class="absolute top-3 left-3 z-10">
+<span class="inline-flex items-center px-2.5 py-1 rounded-md bg-white/90 dark:bg-black/60 text-gray-800 dark:text-white text-xs font-medium shadow-sm backdrop-blur-sm border border-gray-200 dark:border-gray-700">
+                            Premium
+                        </span>
+</div>
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Luxury hotel room interior in Pahalgam with mountain view" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBjwrhxkbgwnRfmAaa55NwXIsFdnsSAs_Fwz2zRpVuSQsjsDINTsGwolFtXuf09Nz1SRfpBwHf2RbxWtKvENaOkqDPbWEXXXKrKWm1wfyZ30w507NTUnYijJjVDb8PRg_9ZayrcOwOvorIk1RcgpRwsAAcMewwaWrETt7EUhcoUDl43ninmERMtdLGYGLLbWkysb7vDCvvnXsRekFCbNpsP1kv3L5T4FlBiA0pTEj2w4StB7fgluBVhB_SWaOAPPbgsTJ-iS1kpSQRo");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60"></div>
+<div class="absolute bottom-3 left-3 right-3 text-white flex justify-between items-end">
+<div class="flex items-center gap-1 bg-black/40 backdrop-blur-md px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span class="text-xs font-medium">6 Nights / 7 Days</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col flex-grow p-5">
+<div class="flex justify-between items-start mb-2">
+<div>
+<p class="text-primary-dark dark:text-primary text-xs font-semibold uppercase tracking-wide mb-1">Ideal for Luxury</p>
+<h3 class="text-lg font-bold text-[#0d1b11] dark:text-white leading-tight">The Pahalgam Retreat</h3>
+</div>
+</div>
+<div class="my-4 space-y-2">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<p class="text-sm text-gray-600 dark:text-gray-300">5-Star River View Resort</p>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<p class="text-sm text-gray-600 dark:text-gray-300">Private Pony Trek</p>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<p class="text-sm text-gray-600 dark:text-gray-300">Candlelight Dinner Setup</p>
+</div>
+</div>
+<div class="mt-auto pt-4 border-t border-gray-100 dark:border-gray-700/50">
+<div class="flex flex-col gap-3">
+<div class="flex justify-between items-baseline">
+<span class="text-xs text-gray-500">Starting from</span>
+<span class="text-lg font-bold text-[#0d1b11] dark:text-white">₹32,999<span class="text-xs font-normal text-gray-500 ml-1">/person</span></span>
+</div>
+<div class="grid grid-cols-[1fr_auto] gap-2">
+<a href="https://wa.me/919186049279" class="flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-[#0d1b11] rounded-lg h-10 px-4 text-sm font-bold transition-colors inline-block">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+                                    Plan on WhatsApp
+                                </a>
+<button aria-label="View Details" class="flex items-center justify-center bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-[#0d1b11] dark:text-gray-200 rounded-lg h-10 w-10 transition-colors">
+<span class="material-symbols-outlined text-[20px]">arrow_outward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 5 -->
+<article class="group flex flex-col bg-surface-light dark:bg-surface-dark rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 overflow-hidden hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)] hover:-translate-y-1 transition-all duration-300">
+<div class="relative aspect-[4/3] overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Couple sitting by a bonfire in Sonmarg valley" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAnjfdtbzMrFSprfXQ56ANMk1spHqUeCy2AQcnOENljK3VNu96EVYKw4jae657ID51_hXM5A2-Ki-dST_JhTdGixOIjtXHIe-Ie677fkqb0B_EbZtqrm21K2rUILhvs8u5wtcd7nWIT4ypXJ7TMQUHyQw51nM6tTK9hm-BJD-qTCPg175QrBKa25DcZmOJFYtRfLnKJrEy0_ipDB3UvrkjIuAJLtAeowXTt6fHUJIfc8CSfHE7IX3n5WMDN0nyasRrxz59LPb8AByQT");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60"></div>
+<div class="absolute bottom-3 left-3 right-3 text-white flex justify-between items-end">
+<div class="flex items-center gap-1 bg-black/40 backdrop-blur-md px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span class="text-xs font-medium">3 Nights / 4 Days</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col flex-grow p-5">
+<div class="flex justify-between items-start mb-2">
+<div>
+<p class="text-primary-dark dark:text-primary text-xs font-semibold uppercase tracking-wide mb-1">Ideal for Nature Lovers</p>
+<h3 class="text-lg font-bold text-[#0d1b11] dark:text-white leading-tight">Sonmarg Golden Meadow</h3>
+</div>
+</div>
+<div class="my-4 space-y-2">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<p class="text-sm text-gray-600 dark:text-gray-300">Thajiwas Glacier Trek</p>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<p class="text-sm text-gray-600 dark:text-gray-300">Riverside Camping</p>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<p class="text-sm text-gray-600 dark:text-gray-300">Local Trout Fishing</p>
+</div>
+</div>
+<div class="mt-auto pt-4 border-t border-gray-100 dark:border-gray-700/50">
+<div class="flex flex-col gap-3">
+<div class="flex justify-between items-baseline">
+<span class="text-xs text-gray-500">Starting from</span>
+<span class="text-lg font-bold text-[#0d1b11] dark:text-white">₹16,499<span class="text-xs font-normal text-gray-500 ml-1">/person</span></span>
+</div>
+<div class="grid grid-cols-[1fr_auto] gap-2">
+<button class="flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-[#0d1b11] rounded-lg h-10 px-4 text-sm font-bold transition-colors">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+                                    Plan on WhatsApp
+                                </button>
+<button aria-label="View Details" class="flex items-center justify-center bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-[#0d1b11] dark:text-gray-200 rounded-lg h-10 w-10 transition-colors">
+<span class="material-symbols-outlined text-[20px]">arrow_outward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 6 -->
+<article class="group flex flex-col bg-surface-light dark:bg-surface-dark rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 overflow-hidden hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)] hover:-translate-y-1 transition-all duration-300">
+<div class="relative aspect-[4/3] overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Aerial view of winding roads through Kashmir mountains" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB-xyVhfF4iPfIr4qtX-uYVv1jgnKM8E_GwZ-5hVb1LHx2yfIeSeGJkSEw9NxP94EKc-XcsqGbWCHQfd3fMF6khCSGeVT1H-RBtu85rvvZSffTu0MHBqyEg5jxrIrHFQSvt4REycFwO6aPNKjICPj8xeVBN8Ocz2Q3jLQtepCbtI7YvB-mtyX-vxasIk8x6gxBtanZhDxrY6z2DUtVBV4JEe0-bcezV1WVwSdtt6xnD5LskzEoElGex51VSFHeyTGu2t03Cp_XhFScl");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60"></div>
+<div class="absolute bottom-3 left-3 right-3 text-white flex justify-between items-end">
+<div class="flex items-center gap-1 bg-black/40 backdrop-blur-md px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span class="text-xs font-medium">8 Nights / 9 Days</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col flex-grow p-5">
+<div class="flex justify-between items-start mb-2">
+<div>
+<p class="text-primary-dark dark:text-primary text-xs font-semibold uppercase tracking-wide mb-1">Ideal for Explorers</p>
+<h3 class="text-lg font-bold text-[#0d1b11] dark:text-white leading-tight">Complete Kashmir Circuit</h3>
+</div>
+</div>
+<div class="my-4 space-y-2">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<p class="text-sm text-gray-600 dark:text-gray-300">Srinagar-Gulmarg-Pahalgam</p>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<p class="text-sm text-gray-600 dark:text-gray-300">Off-beat Doodhpathri Day Trip</p>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<p class="text-sm text-gray-600 dark:text-gray-300">Authentic Wazwan Lunch</p>
+</div>
+</div>
+<div class="mt-auto pt-4 border-t border-gray-100 dark:border-gray-700/50">
+<div class="flex flex-col gap-3">
+<div class="flex justify-between items-baseline">
+<span class="text-xs text-gray-500">Starting from</span>
+<span class="text-lg font-bold text-[#0d1b11] dark:text-white">₹38,999<span class="text-xs font-normal text-gray-500 ml-1">/person</span></span>
+</div>
+<div class="grid grid-cols-[1fr_auto] gap-2">
+<button class="flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-[#0d1b11] rounded-lg h-10 px-4 text-sm font-bold transition-colors">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+                                    Plan on WhatsApp
+                                </button>
+<button aria-label="View Details" class="flex items-center justify-center bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-[#0d1b11] dark:text-gray-200 rounded-lg h-10 w-10 transition-colors">
+<span class="material-symbols-outlined text-[20px]">arrow_outward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</article>
+</div>
+</main>
+<!-- Trust Signals Section -->
+<section class="w-full bg-white dark:bg-surface-dark border-t border-gray-100 dark:border-gray-800 py-10">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="flex flex-col items-center text-center gap-2">
+<div class="size-10 rounded-full bg-primary/10 flex items-center justify-center mb-1">
+<span class="material-symbols-outlined text-primary-dark dark:text-primary">verified_user</span>
+</div>
+<h4 class="font-bold text-[#0d1b11] dark:text-white">Trusted Experts</h4>
+<p class="text-xs text-gray-500">Local team, on-ground presence</p>
+</div>
+<div class="flex flex-col items-center text-center gap-2">
+<div class="size-10 rounded-full bg-primary/10 flex items-center justify-center mb-1">
+<span class="material-symbols-outlined text-primary-dark dark:text-primary">currency_rupee</span>
+</div>
+<h4 class="font-bold text-[#0d1b11] dark:text-white">No Hidden Fees</h4>
+<p class="text-xs text-gray-500">Transparent pricing always</p>
+</div>
+<div class="flex flex-col items-center text-center gap-2">
+<div class="size-10 rounded-full bg-primary/10 flex items-center justify-center mb-1">
+<span class="material-symbols-outlined text-primary-dark dark:text-primary">support_agent</span>
+</div>
+<h4 class="font-bold text-[#0d1b11] dark:text-white">24/7 Support</h4>
+<p class="text-xs text-gray-500">We are just a WhatsApp away</p>
+</div>
+<div class="flex flex-col items-center text-center gap-2">
+<div class="size-10 rounded-full bg-primary/10 flex items-center justify-center mb-1">
+<span class="material-symbols-outlined text-primary-dark dark:text-primary">thumb_up</span>
+</div>
+<h4 class="font-bold text-[#0d1b11] dark:text-white">4.9/5 Rating</h4>
+<p class="text-xs text-gray-500">Based on 500+ happy travelers</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full bg-background-light dark:bg-background-dark py-8 border-t border-[#e7f3ea] dark:border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row items-center md:justify-between gap-4">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="./logo.png" alt="Safar e Kashmir logo" class="h-7 w-auto opacity-100" style="filter: saturate(1.06) contrast(1.05);"/>
+                <span class="text-lg font-bold text-[#0d1b11] dark:text-white">Safar e Kashmir</span>
+            </a>
+
+            <div class="flex items-center gap-4">
+                <a class="text-gray-400 hover:text-primary flex items-center gap-2" href="https://www.instagram.com/">
+                    <span class="sr-only">Instagram</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.468 2.37c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" fill-rule="evenodd"></path></svg>
+                    <span class="text-sm font-medium hidden sm:inline">Follow us on Instagram</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- FAB (Floating Action Button) -->
+<button class="fixed bottom-6 right-6 z-50 flex items-center justify-center size-14 rounded-full bg-primary hover:bg-primary-dark text-[#0d1b11] shadow-[0_4px_20px_rgba(19,236,73,0.4)] transition-all hover:scale-110 active:scale-95 group">
+<span class="material-symbols-outlined text-[28px] group-hover:animate-pulse">chat</span>
+</button>
+</body></html>
